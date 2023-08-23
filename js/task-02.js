@@ -8,12 +8,8 @@ const ingredients = [
 ];
 
 const quantityIndredients = document.querySelector("#ingredients");
+const newLiEl = ingredients
+  .map(item => `<li class="item">${item}</li>`)
+  .join("");
 
-ingredients.forEach(element => {
-  const liEl = document.createElement('li');
-  liEl.classList.toggle("item");
-  liEl.textContent = element;
-  quantityIndredients.insertAdjacentElement('beforeend', liEl);
-  }
-);
-  
+quantityIndredients.insertAdjacentHTML("beforeend", newLiEl);

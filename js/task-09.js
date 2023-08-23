@@ -9,8 +9,9 @@ function getRandomHexColor() {
 }
 
 const changeColor = () => {
-  findBackColor.textContent = getRandomHexColor();
-  body.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  findBackColor.textContent = color;
+  body.style.backgroundColor = color;
 }
 
 getClassDiv.addEventListener("click", changeColor);
