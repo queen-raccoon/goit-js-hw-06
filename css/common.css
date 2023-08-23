@@ -22,3 +22,35 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.item {
+  list-style-type: none;
+}
+
+.gallery
+{
+  list-style-type: none;
+
+}
+
+ul,li,h1,h2,h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.js-title3 {
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.js-img3 {
+  width: 500px;
+  height: 300px;  
+}
+
+.js-styleLiEl3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
